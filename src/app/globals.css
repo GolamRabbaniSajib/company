@@ -1,0 +1,23 @@
+@import "keep-react/css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* global.css or _app.js (import this file) */
+:root {
+    /* --color-primary: #7b68ee; */
+    /* --color-primary: #00b3f1; */
+    --color-primary: #00B2F0;
+    --color-secondary: #f6851f;
+  }
+
+  /* Hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+  
