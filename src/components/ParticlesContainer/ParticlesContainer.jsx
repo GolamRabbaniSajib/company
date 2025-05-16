@@ -14,30 +14,23 @@ const ParticlesContainer = () => {
       id="tsparticles"
       init={particlesInit}
       options={{
-        key: "basic",
-        name: "Basic",
-        autoPlay: true,
+        fullScreen: {
+          enable: true,
+          zIndex: 0,
+        },
         background: {
           color: {
             value: "#ffffff",
           },
           opacity: 1,
         },
-        clear: true,
-        fullScreen: {
-          enable: true,
-          zIndex: 0,
-        },
-        detectRetina: true,
         fpsLimit: 120,
+        detectRetina: true,
         interactivity: {
           events: {
             onClick: { enable: true, mode: "push" },
-            onHover: {
-              enable: true,
-              mode: "repulse",
-            },
-            resize: { enable: true },
+            onHover: { enable: true, mode: "repulse" },
+            resize: true,
           },
           modes: {
             push: { quantity: 4 },
@@ -61,7 +54,7 @@ const ParticlesContainer = () => {
             },
           },
           opacity: {
-            value: 0.2, // 🔽 reduced particle opacity
+            value: 0.1, // 🔽 more reduced opacity
             animation: {
               enable: false,
             },
@@ -71,6 +64,13 @@ const ParticlesContainer = () => {
             animation: {
               h: { enable: true, speed: 20, sync: true },
             },
+          },
+          links: {
+            enable: true,
+            distance: 150,
+            color: "#0000ff",
+            opacity: 0.1, // 🔽 more reduced link opacity
+            width: 1,
           },
           move: {
             enable: true,
@@ -88,13 +88,6 @@ const ParticlesContainer = () => {
             animation: {
               enable: false,
             },
-          },
-          links: {
-            enable: true,
-            distance: 150,
-            color: "#0000ff",
-            opacity: 0.2, // 🔽 reduced link opacity
-            width: 1,
           },
         },
         pauseOnBlur: true,
