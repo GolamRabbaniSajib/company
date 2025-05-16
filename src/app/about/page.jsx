@@ -95,9 +95,7 @@ const AboutPage = () => {
           </div>
         </div>
 
-        <div className="mt-32 w-11/12 md:w-4/5 mx-auto animate-fade-in">
-          <OurClient />
-        </div>
+        
       </div>
     </>
   );
