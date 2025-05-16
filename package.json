@@ -10,9 +10,6 @@
   },
   "dependencies": {
     "@smastrom/react-rating": "^1.5.0",
-    "@tsparticles/basic": "^3.8.1",
-    "@tsparticles/engine": "^3.8.1",
-    "@tsparticles/slim": "^3.8.1",
     "axios": "^1.7.7",
     "crypto-js": "^4.2.0",
     "framer-motion": "^12.10.5",
