@@ -11,7 +11,7 @@ const SectionTitle = ({ heading, subHeading }) => {
       viewport={{ once: true }}
       className="text-center mb-12 px-4"
     >
-      {/* Highlighted Main Heading */}
+      {/* Main Heading */}
       <motion.h2
         initial={{ opacity: 0, y: -10 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -21,7 +21,7 @@ const SectionTitle = ({ heading, subHeading }) => {
         {heading}
       </motion.h2>
 
-      {/* Smaller Subheading */}
+      {/* Subheading */}
       <motion.p
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}

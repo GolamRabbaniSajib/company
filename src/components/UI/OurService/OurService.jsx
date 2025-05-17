@@ -8,7 +8,7 @@ import axios from "axios";
 
 const OurService = () => {
   const [services, setServices] = useState([]);
-  const [loading, setLoading] = useState(true); // 👈 loading state
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchServices = async () => {
@@ -25,7 +25,7 @@ const OurService = () => {
       } catch (error) {
         console.error("Error fetching services:", error);
       } finally {
-        setLoading(false); // 👈 stop loading after fetch
+        setLoading(false);
       }
     };
 

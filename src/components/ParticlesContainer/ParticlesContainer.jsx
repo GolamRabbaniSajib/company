@@ -54,7 +54,7 @@ const ParticlesContainer = () => {
             },
           },
           opacity: {
-            value: 0.1, // 🔽 more reduced opacity
+            value: 0.1,
             animation: {
               enable: false,
             },
@@ -69,7 +69,7 @@ const ParticlesContainer = () => {
             enable: true,
             distance: 150,
             color: "#0000ff",
-            opacity: 0.1, // 🔽 more reduced link opacity
+            opacity: 0.1,
             width: 1,
           },
           move: {
