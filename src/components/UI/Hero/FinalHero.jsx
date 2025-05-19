@@ -6,7 +6,7 @@ import heroImage from "../../../assets/image2/home-font.png";
 
 const FinalHero = () => {
   return (
-    <div className="bg-[url(https://learnwithsumit.com/_next/static/media/pattern-dark.20747baf.svg)]">
+    <div >
       <div className=" py-20 px-4 md:px-10">
         <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-10">
           {/* Text Content */}
@@ -16,11 +16,11 @@ const FinalHero = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="w-full md:w-1/2 text-center md:text-left"
           >
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#3F444B] leading-tight mb-6">
               Empowering <span className="text-blue-600">Innovation</span> for
               Tomorrow
             </h1>
-            <p className="text-gray-700 text-base sm:text-lg mb-8">
+            <p className="text-[#555A63] text-base sm:text-lg mb-8">
               We build scalable solutions that bring ideas to life — modern,
               fast, and tailored for your success.
             </p>

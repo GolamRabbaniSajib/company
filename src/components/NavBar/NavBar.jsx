@@ -33,8 +33,8 @@ const NavBar = () => {
       transition={{ duration: 0.4, ease: "easeOut" }}
       className={`fixed top-0 left-0 z-50 w-full transition-all duration-300 ${
         isScrolled
-          ? "bg-[#1f1f1f]/90 backdrop-blur-md shadow-md text-white"
-          : "bg-transparent text-blue-400"
+          ? " backdrop-blur-md shadow-lg text-[#3F444B]"
+          : "bg-transparent text-[#3F444B]"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-3 flex items-center justify-between">
@@ -70,12 +70,12 @@ const NavBar = () => {
         {/* Call Button */}
         <motion.div
           whileTap={{ scale: 0.95 }}
-          className="hidden lg:flex items-center gap-2 text-sm bg-[var(--color-primary)] text-white px-4 py-2 rounded-full shadow-md hover:bg-opacity-90 transition"
+          className="hidden lg:flex items-center gap-2 text-sm bg-[#2563EB] text-white px-4 py-2 rounded-full shadow-md hover:bg-opacity-90 transition"
         >
-          <MdCall className="w-5 h-5" />
-          <div className="flex flex-col items-start leading-tight">
+          
+          <div className="flex gap-2 items-center leading-tight">
             <span className="text-xs">Call Now</span>
-            <span className="font-medium text-sm">+880 15336 33913</span>
+            <span className="font-medium text-sm flex gap-2"><MdCall className="w-5 h-5" /> +880 15336 33913</span>
           </div>
         </motion.div>
 
