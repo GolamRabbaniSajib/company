@@ -15,12 +15,13 @@ export default function Home() {
   return (
     <div className="relative overflow-x-hidden">
       <FinalHero />
-      <OurClient />
-      <OurService />
+      
       <TechStack />
+      <OurService />
       <WhyChooseUs />
       <WhyTrustUs />
       <Performance />
+      <OurClient />
       <ContactHome />
       <Testimonials />
       {/* <TeamMember /> */}
