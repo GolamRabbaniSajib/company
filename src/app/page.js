@@ -9,6 +9,7 @@ import Testimonials from "@/components/UI/Testimonials/Testimonials";
 import WhyChooseUs from "@/components/UI/WhyChooseUs/WhyChooseUs";
 import WhyTrustUs from "@/components/UI/WhyTrustUs/WhyTrustUs";
 import TechStack from "@/components/TechStack/TechStack";
+import ServiceSection from "@/components/UI/ServiceSection/ServiceSection";
 
 export default function Home() {
   
@@ -17,9 +18,10 @@ export default function Home() {
       <FinalHero />
       
       <TechStack />
-      <OurService />
+      <ServiceSection></ServiceSection>
+      {/* <OurService /> */}
       <WhyChooseUs />
-      <WhyTrustUs />
+      {/* <WhyTrustUs /> */}
       <Performance />
       <OurClient />
       <ContactHome />
