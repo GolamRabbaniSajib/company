@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import services from "@/data/servicesdata";
+import services from "../../../Data/servicesdata";
 
 const ServicesSection = () => {
   const [active, setActive] = useState(0);
