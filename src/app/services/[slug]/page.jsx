@@ -38,7 +38,7 @@ const ServiceDetails = () => {
         {service.cards.map((card, i) => (
           <motion.div
             key={i}
-            className="p-6  border border-gray-200 rounded-xl cursor-pointer select-none"
+            className="p-6 border border-gray-200 rounded-xl cursor-pointer select-none bg-white"
             whileHover={cardHover}
             onClick={() => setSelectedCard(card)}
             layout
@@ -47,7 +47,6 @@ const ServiceDetails = () => {
             transition={{ delay: i * 0.1, type: "spring", stiffness: 100 }}
           >
             <h2 className="text-2xl font-semibold mb-2 text-gray-800">{card.title}</h2>
-            
           </motion.div>
         ))}
       </div>
@@ -77,8 +76,16 @@ const ServiceDetails = () => {
                 initial="hidden"
                 animate="visible"
                 exit="exit"
-                onClick={(e) => e.stopPropagation()} // Prevent closing on modal content click
+                onClick={(e) => e.stopPropagation()}
               >
+                {selectedCard.image && (
+                  <img
+                    src={selectedCard.image}
+                    alt={selectedCard.title}
+                    className="w-full h-48 object-cover rounded-md mb-6"
+                  />
+                )}
+
                 <Dialog.Title className="text-3xl font-bold mb-4 text-gray-900">
                   {selectedCard.title}
                 </Dialog.Title>

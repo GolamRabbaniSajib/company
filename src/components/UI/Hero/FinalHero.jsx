@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import heroImage from "../../../assets/image2/home-font.png";
+import heroImage from "../../../assets/image2/Programming.gif";
 
 const FinalHero = () => {
   return (
