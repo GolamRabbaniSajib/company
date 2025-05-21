@@ -27,7 +27,7 @@ const Performance = () => (
           Maximize Your Business Potential with Our Custom Software Development
           Solutions for Success!
         </p>
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 my-4 leading-snug">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#3F444B] my-4 leading-snug">
           Trusted by 1,000+ Businesses for Expert Software Development Success!
         </h2>
 
@@ -41,11 +41,11 @@ const Performance = () => (
               transition={{ duration: 0.4, delay: index * 0.1 }}
             >
               <div className="text-3xl mb-2">{icon}</div>
-              <h4 className="text-xl font-semibold text-blue-600">
+              <h4 className="text-xl font-semibold text-[#3F444B]">
                 <CountUp end={value} duration={6} separator="," />
                 {suffix}
               </h4>
-              <p className="text-sm text-gray-600 mt-1">{label}</p>
+              <p className="text-sm text-[#4B5563] mt-1">{label}</p>
             </motion.div>
           ))}
         </div>
