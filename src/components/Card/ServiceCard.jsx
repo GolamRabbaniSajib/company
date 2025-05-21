@@ -25,7 +25,7 @@ const ServiceCard = ({ title, image, description }) => {
       </h3>
 
       {/* Description */}
-      <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+      <p className="text-sm text-center text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
         {description}
       </p>
 

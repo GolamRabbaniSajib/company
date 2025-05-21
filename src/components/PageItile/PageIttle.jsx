@@ -1,23 +1,37 @@
+'use client';
+
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 import React from 'react';
 
-const PageIttle = ({pageTitle,pageSubTitle}) => {
-    return (
+const PageTitle = ({ pageTitle, pageSubTitle }) => {
+  return (
+    <section className="w-full pt-24 flex flex-col items-center justify-center text-center px-4">
+      <motion.h1
+        className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-4"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: 'easeOut' }}
+      >
+        {pageTitle}
+      </motion.h1>
 
-            <div className="overflow-hidden w-full">
-                <div
-                    className="lg:h-[400px] md:h-[350px] sm:h-[300px] h-[230px]  w-full bg-cover bg-center flex flex-col items-center justify-center"
-                    style={{ backgroundImage: `url('https://i.ibb.co.com/CP0Br5p/breadcrumb-bg-1.png')` }}
-                >
-                    <div className="p-8 text-center text-white">
-                       
-                       <h2 className='text-4xl font-bold py-4'>{pageTitle}</h2>
-                      <p className='font-bold'><Link href='/' className='cursor-pointer hover:text-[var(--color-primary)]'>Home</Link> | {pageSubTitle}</p>
-                    </div>
-                </div>
-            </div>
-
-    );
+      <motion.p
+        className="text-sm md:text-base font-medium text-gray-600 dark:text-gray-300"
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+      >
+        <Link
+          href="/"
+          className="text-[var(--color-primary)] hover:underline transition-all duration-200"
+        >
+          Home
+        </Link>{' '}
+        / {pageSubTitle}
+      </motion.p>
+    </section>
+  );
 };
 
-export default PageIttle;
+export default PageTitle;

@@ -20,7 +20,7 @@ const Services = async () => {
     return (
         <div>
             <PageIttle pageTitle={"Services"} pageSubTitle={'Services'}></PageIttle>
-            <div className='text-center mx-auto w-full md:w-4/5 p-5 md:p-10 lg:p-16'>
+            <div className='text-center container mx-auto w-full  p-5 md:p-10 lg:p-16'>
           
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
           {services.map((service, index) => (
