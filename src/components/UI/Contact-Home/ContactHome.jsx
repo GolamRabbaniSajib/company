@@ -24,7 +24,7 @@ const ContactHome = () => {
 
   return (
     <div
-      className="min-h-screen flex items-center justify-center px-4 py-12 bg-cover bg-center"
+      className="min-h-screen flex items-center justify-center px-4 py-6 md:py-12 bg-cover bg-center"
       style={{ backgroundImage: 'url("/background.jpg")' }}
     >
       <form
