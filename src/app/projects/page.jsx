@@ -52,9 +52,6 @@ const ProjectsPage = () => {
               <h3 className="text-xl font-semibold text-[#3F444B] dark:text-white mb-2">
                 {project.title}
               </h3>
-              <p className="text-sm text-[#4B5563] dark:text-gray-300 mb-4">
-                {project.description}
-              </p>
               <div className="flex flex-wrap gap-2">
                 {project.tech.map((techItem, techIndex) => (
                   <span
