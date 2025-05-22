@@ -47,10 +47,10 @@ const ServicesSection = () => {
               key={index}
               onClick={() => setActive(index)}
               className={`
-        relative border-l-4 border-[var(--color-primary)] px-5 py-4 rounded-lg shadow-md cursor-pointer overflow-hidden
+        relative border-l-4 border-[#2563EB] px-5 py-4 rounded-lg shadow-md cursor-pointer overflow-hidden
         ${
           index === active
-            ? "bg-blue-600 text-white"
+            ? "bg-[#2563EB] text-white"
             : "bg-white text-gray-700 dark:bg-neutral-900 dark:text-white"
         }
         group
@@ -60,7 +60,7 @@ const ServicesSection = () => {
               {/* Hover Background Expand */}
               <span
                 className={`
-          absolute inset-0 bg-[var(--color-primary)] z-0 w-0 group-hover:w-full transition-all duration-500 ease-in-out rounded-lg
+          absolute inset-0 bg-[#2563EB] z-0 w-0 group-hover:w-full transition-all duration-500 ease-in-out rounded-lg
           ${index === active ? "w-full" : ""}
         `}
               ></span>
@@ -75,7 +75,7 @@ const ServicesSection = () => {
       </div>
 
       {/* Right */}
-      <div className="lg:w-1/2 flex flex-col items-center gap-2">
+      <div className="lg:w-1/2 flex flex-col items-center gap-4">
         <h4 className="text-sm font-semibold text-gray-600">Recent Projects</h4>
 
         <div className="relative group w-full aspect-video sm:aspect-square bg-gray-200 rounded-lg shadow overflow-hidden">
@@ -107,6 +107,16 @@ const ServicesSection = () => {
             </motion.button>
           </motion.div>
         </div>
+
+        {/* View Projects Button */}
+        <motion.button
+          onClick={() => router.push("/projects")}
+          className="mt-2 bg-blue-600 text-white font-semibold px-6 py-2 rounded shadow hover:bg-blue-700 transition"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          View Projects
+        </motion.button>
       </div>
     </div>
   );

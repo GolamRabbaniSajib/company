@@ -94,7 +94,7 @@ const Footer = () => {
               <li key={href}>
                 <Link
                   href={href}
-                  className="hover:text-[var(--color-primary)] hover:underline transition-all duration-300"
+                  className="hover:text-[#2563EB] hover:underline transition-all duration-300"
                 >
                   {label}
                 </Link>
@@ -112,7 +112,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
-              className="hover:text-[var(--color-primary)] transition"
+              className="hover:text-[#2563EB] transition"
             >
               <FaFacebook className="w-6 h-6" />
             </a>
@@ -132,7 +132,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="hover:text-[var(--color-primary)] transition"
+              className="hover:text-[#2563EB] transition"
             >
               <FaLinkedin className="w-6 h-6" />
             </a>
@@ -141,14 +141,14 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="YouTube"
-              className="hover:text-[var(--color-primary)] transition"
+              className="hover:text-[#2563EB] transition"
             >
               <FaYoutube className="w-6 h-6" />
             </a>
             <button
               onClick={() => handleWhatsApp("Hello, I want to contact with you.")}
               aria-label="WhatsApp"
-              className="hover:text-[var(--color-primary)] transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--color-primary)] rounded"
+              className="hover:text-[#2563EB] transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--color-primary)] rounded"
               type="button"
             >
               <FaWhatsapp className="w-6 h-6" />
