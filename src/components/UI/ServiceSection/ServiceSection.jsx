@@ -42,35 +42,43 @@ const ServicesSection = () => {
         </motion.p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {services.map((service, index) => (
-            <motion.div
-              key={index}
-              onClick={() => setActive(index)}
-              className={`
+          {services.map((service, index) => {
+            const isActive = index === active;
+
+            return (
+              <motion.div
+                key={index}
+                onClick={() => setActive(index)}
+                className={`
         relative border-l-4 border-[#2563EB] px-5 py-4 rounded-lg shadow-md cursor-pointer overflow-hidden
         ${
-          index === active
+          isActive
             ? "bg-[#2563EB] text-white"
             : "bg-white text-gray-700 dark:bg-neutral-900 dark:text-white"
         }
         group
       `}
-              whileTap={{ scale: 0.97 }}
-            >
-              {/* Hover Background Expand */}
-              <span
-                className={`
-          absolute inset-0 bg-[#2563EB] z-0 w-0 group-hover:w-full transition-all duration-500 ease-in-out rounded-lg
-          ${index === active ? "w-full" : ""}
-        `}
-              ></span>
+                whileTap={{ scale: 0.97 }}
+              >
+                {/* Hover Background Expand */}
+                {!isActive && (
+                  <span
+                    className={`
+            absolute inset-0 bg-blue-400 z-0 w-0 group-hover:w-full transition-all duration-500 ease-in-out rounded-lg
+          `}
+                  ></span>
+                )}
+                {isActive && (
+                  <span className="absolute inset-0 bg-[#2563EB] z-0 w-full rounded-lg"></span>
+                )}
 
-              {/* Text with smooth color transition */}
-              <span className="relative z-10 group-hover:text-white transition-colors duration-300">
-                {service.title}
-              </span>
-            </motion.div>
-          ))}
+                {/* Text with smooth color transition */}
+                <span className="relative z-10 group-hover:text-white transition-colors duration-300">
+                  {service.title}
+                </span>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
 
