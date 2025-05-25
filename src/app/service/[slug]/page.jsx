@@ -12,8 +12,18 @@ const backdropVariants = {
 
 const modalVariants = {
   hidden: { opacity: 0, scale: 0.8, y: -50 },
-  visible: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.3, ease: "easeOut" } },
-  exit: { opacity: 0, scale: 0.8, y: 50, transition: { duration: 0.2, ease: "easeIn" } },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    transition: { duration: 0.3, ease: "easeOut" },
+  },
+  exit: {
+    opacity: 0,
+    scale: 0.8,
+    y: 50,
+    transition: { duration: 0.2, ease: "easeIn" },
+  },
 };
 
 const cardHover = {
@@ -27,12 +37,18 @@ const ServiceDetails = () => {
   const [selectedCard, setSelectedCard] = useState(null);
 
   if (!service)
-    return <div className="p-16 text-red-500 text-center">Service not found.</div>;
+    return (
+      <div className="p-16 text-red-500 text-center">Service not found.</div>
+    );
 
   return (
     <div className="p-16 mt-10 sm:p-10 max-w-7xl mx-auto">
-      <h1 className="text-4xl font-extrabold mb-6 text-gray-900">{service.title}</h1>
-      <p className="text-lg text-gray-600 mb-10 max-w-3xl">{service.subheading}</p>
+      <h1 className="text-4xl font-extrabold mb-6 text-gray-900">
+        {service.title}
+      </h1>
+      <p className="text-lg text-gray-600 mb-10 max-w-3xl">
+        {service.subheading}
+      </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {service.cards.map((card, i) => (
@@ -46,7 +62,9 @@ const ServiceDetails = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: i * 0.1, type: "spring", stiffness: 100 }}
           >
-            <h2 className="text-2xl font-semibold mb-2 text-gray-800">{card.title}</h2>
+            <h2 className="text-2xl font-semibold mb-2 text-gray-800">
+              {card.title}
+            </h2>
           </motion.div>
         ))}
       </div>

@@ -9,7 +9,7 @@ const ServicesSection = () => {
   const router = useRouter();
 
   const handleDetails = () => {
-    router.push(`/services/${services[active].slug}`);
+    router.push(`/service/${services[active].slug}`);
   };
 
   return (
