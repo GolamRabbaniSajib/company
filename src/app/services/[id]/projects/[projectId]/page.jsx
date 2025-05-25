@@ -51,14 +51,14 @@ const ProjectDetailsPage = ({ params }) => {
         <p className="mb-6">{project.description}</p>
         <div className="flex flex-wrap gap-2 mb-6">
           {project.tech.map((tech, idx) => (
-            <span key={idx} className="px-3 py-1 bg-gray-200 rounded text-sm">
+            <span key={idx} className="px-3 py-1 bg-blue-100 rounded text-sm">
               {tech}
             </span>
           ))}
         </div>
         <Link
           href={`/services/${id}`}
-          className="inline-block mt-4 px-4 py-2 bg-gray-300 rounded hover:bg-gray-400 transition"
+          className="inline-block mt-4 px-4 text-white py-2 bg-[#3A72ED] rounded hover:bg-[#3466d2] transition"
         >
           Back to {service.title}
         </Link>

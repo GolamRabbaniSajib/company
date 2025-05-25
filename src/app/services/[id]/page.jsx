@@ -42,7 +42,7 @@ const ServiceDetailsPage = ({ params }) => {
                 {project.tech.map((tech, idx) => (
                   <span
                     key={idx}
-                    className="px-2 py-1 bg-gray-200 text-sm rounded"
+                    className="px-2 py-1 bg-blue-100 text-sm rounded"
                   >
                     {tech}
                   </span>

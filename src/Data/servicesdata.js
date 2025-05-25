@@ -44,7 +44,7 @@ const servicesdata = [
   {
     title: "Mobile App Development",
     slug: "mobile-app-development",
-    image: "https://i.ibb.co/N1qGdNj/mobile-app.jpg",
+    image: "https://i.ibb.co/s9fYW1HJ/5467426-1720.jpg",
     heading: "iOS & Android App Solutions",
     subheading: "Cross-platform apps that perform flawlessly on all devices.",
     cards: [
@@ -65,7 +65,7 @@ const servicesdata = [
   {
     title: "Digital Marketing",
     slug: "digital-marketing",
-    image: "https://i.ibb.co/YbNP6TZ/digital-marketing.jpg",
+    image: "https://i.ibb.co/wZbWg7g3/digital-marketing-with-icons-business-people.jpg",
     heading: "Grow Your Online Presence",
     subheading: "We help you reach and convert your target audience effectively.",
     cards: [
@@ -73,7 +73,7 @@ const servicesdata = [
         title: "SEO Optimization",
         description:
           "Our SEO strategies improve your website’s visibility on search engines, driving organic traffic and increasing conversions. We use keyword research, on-page optimization, and technical SEO best practices to boost your rankings.",
-        image: "https://i.ibb.co/9c7hqvQ/seo.jpg",
+        image: "https://i.ibb.co/4nZNjN7r/employee-working-marketing-setting.jpg",
       },
       {
         title: "Social Media Ads",

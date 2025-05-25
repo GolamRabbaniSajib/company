@@ -67,7 +67,7 @@ const ProjectDetailsPage = () => {
         {project.tech.map((tech, idx) => (
           <span
             key={idx}
-            className="px-4 py-2 bg-gradient-to-r from-blue-400 to-indigo-500 text-white rounded-full text-sm font-semibold shadow-md"
+            className="px-4 py-2 bg-blue-100 text-black rounded-full text-sm font-semibold shadow-md"
           >
             {tech}
           </span>
